@@ -51,14 +51,15 @@ class _MainCarousalState extends State<MainCarousal> {
                           child: Row(
                             children: [
                               Text(
-                                "15 people liked this",
+                                "20 people liked this",
                                 style: TextStyle(color: Colors.black),
                               ),
                               SizedBox(
                                 width: 5,
                               ),
                               Icon(
-                                Icons.favorite_outline,
+                                Icons.favorite,
+                                color: Colors.black,
                                 size: 14,
                               )
                             ],
@@ -71,8 +72,6 @@ class _MainCarousalState extends State<MainCarousal> {
                                 tag: i,
                                 child: Container(
                                   width: MediaQuery.of(context).size.width,
-                                  // margin: EdgeInsets.symmetric(horizontal: 5.0),
-
                                   decoration: BoxDecoration(
                                     image: DecorationImage(
                                         image: AssetImage(i),
@@ -125,14 +124,14 @@ class _MainCarousalState extends State<MainCarousal> {
                                         CrossAxisAlignment.start,
                                     children: [
                                       Text(
-                                        "Acconci",
+                                        "Title",
                                         style: TextStyle(
                                             color: Colors.white,
                                             fontSize: 30,
                                             fontWeight: FontWeight.w600),
                                       ),
                                       Text(
-                                        "05 May 2021",
+                                        "03 May 2021",
                                         style: TextStyle(
                                           color: Colors.white,
                                           fontSize: 18,
