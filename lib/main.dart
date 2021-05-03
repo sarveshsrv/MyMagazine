@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
         fontFamily: "Cinzel",
         primarySwatch: Colors.blue,
       ),
-      home: MyHomePage(title: 'Flutter Demo Home Page'),
+      home: MyHomePage(title: 'My Magazine'),
     );
   }
 }
@@ -35,16 +35,13 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   int _selectedIndex = 0;
   List<String> images = [
-    "assets/images/one.jpg",
-    "assets/images/two.jpg",
-    "assets/images/three.jpg",
-    "assets/images/four.jpg",
-    "assets/images/five.jpg",
     "assets/images/six.png",
     "assets/images/seven.png",
     "assets/images/eight.png",
+    "assets/images/three.jpg",
     "assets/images/nine.png",
     "assets/images/ten.png",
+    "assets/images/two.jpg",
     "assets/images/eleven.png",
     "assets/images/twelve.png",
     "assets/images/thirteen.png",
@@ -63,20 +60,45 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text(widget.title),
         actions: [
           IconButton(
-              icon: FaIcon(FontAwesomeIcons.search, color: Colors.black),
-              onPressed: () {})
+            icon: FaIcon(FontAwesomeIcons.search, color: Colors.black),
+            onPressed: () {},
+          )
         ],
       ),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.start,
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 20.0, vertical: 20),
-            child: Text(
-              "Magazine",
-              style: TextStyle(fontSize: 40, fontWeight: FontWeight.bold),
+          Container(
+            margin: EdgeInsets.fromLTRB(25, 5, 5, 5),
+            child: Row(
+              children: [
+                Icon(
+                  Icons.add_a_photo_sharp,
+                  size: 30,
+                ),
+                Padding(
+                  padding: const EdgeInsets.symmetric(
+                      horizontal: 20.0, vertical: 15),
+                  child: Center(
+                    child: Text(
+                      "My Magazine",
+                      style:
+                          TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
+                    ),
+                  ),
+                ),
+              ],
             ),
+          ),
+          Divider(
+            indent: MediaQuery.of(context).size.width * 0.30,
+            endIndent: MediaQuery.of(context).size.width * 0.35,
+            thickness: 5,
+            color: Colors.black,
+          ),
+          SizedBox(
+            height: 10,
           ),
           MainCarousal(
             onPageChanged: onPageChanges,
@@ -84,7 +106,6 @@ class _MyHomePageState extends State<MyHomePage> {
           )
         ],
       ),
-
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: _selectedIndex,
         selectedItemColor: Colors.black,
@@ -97,14 +118,15 @@ class _MyHomePageState extends State<MyHomePage> {
         type: BottomNavigationBarType.fixed,
         items: [
           BottomNavigationBarItem(
+              icon: FaIcon(FontAwesomeIcons.userAlt), label: "user"),
+          BottomNavigationBarItem(
               icon: FaIcon(FontAwesomeIcons.home), label: "Home"),
           BottomNavigationBarItem(
               icon: FaIcon(FontAwesomeIcons.compass), label: "Explore"),
           BottomNavigationBarItem(
-              icon: FaIcon(FontAwesomeIcons.userAlt), label: "user"),
+              icon: FaIcon(FontAwesomeIcons.bookmark), label: "Saved"),
         ],
       ),
-      // This trailing comma makes auto-formatting nicer for build methods.
     );
   }
 

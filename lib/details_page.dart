@@ -64,12 +64,12 @@ class _DetailsPageState extends State<DetailsPage> {
                               fontSize: 20,
                               fontWeight: FontWeight.w600),
                         ),
-                        Text(
-                          "Acconci",
-                          style: TextStyle(
-                            color: Colors.black54,
-                          ),
-                        ),
+                        // Text(
+                        //   "Acconci",
+                        //   style: TextStyle(
+                        //     color: Colors.black54,
+                        //   ),
+                        // ),
                       ],
                     )
                   : null,
@@ -135,7 +135,7 @@ class _DetailsPageState extends State<DetailsPage> {
                                   SlideInRightAnimation(
                                     delay: 0.5,
                                     child: Text(
-                                      "Acconci",
+                                      "Title",
                                       style: TextStyle(
                                           color: Colors.white,
                                           fontSize: 40,

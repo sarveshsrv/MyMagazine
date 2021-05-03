@@ -54,18 +54,18 @@ class AuthorPageState extends State<AuthorPage> {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Text(
-                                "Lygia Pape",
+                                "Description Page",
                                 style: TextStyle(
-                                    fontSize: 35, fontWeight: FontWeight.bold),
+                                    fontSize: 22, fontWeight: FontWeight.bold),
                               ),
                               Text(
-                                "Divisor",
+                                "INDIA",
                                 style: TextStyle(
                                     fontSize: 25,
                                     fontWeight: FontWeight.normal),
                               ),
                               Text(
-                                "1960",
+                                "2021",
                                 style: TextStyle(
                                     fontFamily: "Bungee",
                                     fontSize: 25,
@@ -79,31 +79,31 @@ class AuthorPageState extends State<AuthorPage> {
                           child: Container(
                             //     height: 100,
                             color: Colors.black,
-                            width: 100,
+                            width: 80,
                             child: Column(
                               children: [
                                 Spacer(
-                                  flex: 4,
+                                  flex: 2,
                                 ),
                                 Text(
-                                  "12",
+                                  "04",
                                   style: TextStyle(
                                       color: Colors.white,
-                                      fontSize: 45,
+                                      fontSize: 25,
                                       fontWeight: FontWeight.bold),
                                 ),
                                 Spacer(
                                   flex: 1,
                                 ),
                                 Text(
-                                  "/07",
+                                  "/05",
                                   style: TextStyle(
                                       color: Colors.white,
-                                      fontSize: 35,
+                                      fontSize: 25,
                                       fontWeight: FontWeight.bold),
                                 ),
                                 Spacer(
-                                  flex: 4,
+                                  flex: 2,
                                 ),
                               ],
                             ),
