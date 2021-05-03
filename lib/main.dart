@@ -40,6 +40,14 @@ class _MyHomePageState extends State<MyHomePage> {
     "assets/images/three.jpg",
     "assets/images/four.jpg",
     "assets/images/five.jpg",
+    "assets/images/six.png",
+    "assets/images/seven.png",
+    "assets/images/eight.png",
+    "assets/images/nine.png",
+    "assets/images/ten.png",
+    "assets/images/eleven.png",
+    "assets/images/twelve.png",
+    "assets/images/thirteen.png",
   ];
 
   @override
