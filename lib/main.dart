@@ -36,10 +36,10 @@ class _MyHomePageState extends State<MyHomePage> {
   int _selectedIndex = 0;
   List<String> images = [
     "assets/images/six.png",
+    "assets/images/nine.png",
     "assets/images/seven.png",
     "assets/images/eight.png",
     "assets/images/three.jpg",
-    "assets/images/nine.png",
     "assets/images/ten.png",
     "assets/images/two.jpg",
     "assets/images/eleven.png",
